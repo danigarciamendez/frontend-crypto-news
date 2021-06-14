@@ -1,0 +1,14 @@
+    <div class="noticia" *ngIf="noticia" (click)="verNoticia(noticia.id)">
+      
+      <div id="image">
+        <div id="textSup">{{noticia.title}}</div>
+        <img
+          class="img-fluid"
+          id="img"
+          alt="Imagen noticia"
+          src="../../../../assets/images/not1.jpg"
+        />
+        <div id="textInf">Categoria | fecha | autor</div>
+      </div>
+    </div>
+

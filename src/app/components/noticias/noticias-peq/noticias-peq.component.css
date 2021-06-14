@@ -1,0 +1,35 @@
+.noticia-min {
+    width: 80%;
+    margin-left: 9%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  #image {
+    padding-left: 6%;
+  }
+  #image > #textInf {
+    width: 94%;
+    font-size: 16px;
+    position: absolute;
+    bottom: 2px;
+    color: #fff;
+    background-color: #000;
+    padding: 2px;
+    opacity: 0.5;
+    font-weight: bold;
+  }
+  #image > #textSup {
+    width: 94%;
+    font-size: calc(1rem + 0.5vw);
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    background-color: #000;
+    /* padding:2px; */
+    opacity: 0.8;
+    font-weight: bold;
+  }
+  .img {
+    width: 100%;
+  }

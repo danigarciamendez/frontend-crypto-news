@@ -1,0 +1,78 @@
+<div class="container contenedor">
+
+    <div id="info-crypto" *ngIf="cryptos">
+        <div id="info-cryptos" *ngFor="let crypto of cryptos.data">
+            <div id="img-name">
+                <h2>{{crypto.name}} ({{crypto.symbol}})</h2>
+                <img class="img-responsive image" src="https://s2.coinmarketcap.com/static/img/coins/64x64/{{crypto.id_coinmarket}}.png" alt="">
+            </div>
+            
+            <div id="informacion" >
+                <div class="texto">
+                    <div class="borde2">
+                        <p class="mt-2 text-black-500 font-semibold">Precio : </p>
+                    </div>
+                    <div class="borde2">
+                        <p class="mt-2 text-black-500 font-semibold">Volumen 24h : </p>
+                    </div>
+                    <div class="borde2">
+                        <p class="mt-2 text-black-500 font-semibold">Cap. Mercado : </p>
+                    </div>
+                    <div class="borde2">
+                        <p class="mt-2 text-black-500 font-semibold">Fecha creación : </p>
+                    </div>
+         
+                </div>
+    
+                <div class="texto2">
+                    <div class="borde3">
+                        <p class="mt-2 text-gray-500">{{crypto.price}} $</p>
+                    </div>
+                    <div class="borde3">
+                        <p class="mt-2 text-gray-500">{{crypto.volume_24h}} $</p>
+                    </div>
+                    <div class="borde3">
+                        <p class="mt-2 text-gray-500">{{crypto.market_cap}} $</p>
+                    </div>
+                    <div class="borde3">
+                        <p class="mt-2 text-gray-500">{{crypto.date_added}} </p>
+                    </div>
+     
+                </div>
+    
+                <div class="texto">
+                    <div class="borde">
+                        <p class="mt-2">Porcentaje Cambio 1h </p>
+                        <p class="texto3 rojo" *ngIf="crypto.percent_change_1h<0">{{crypto.percent_change_1h}} %</p>
+                        <p class="texto3 verde" *ngIf="crypto.percent_change_1h>0">{{crypto.percent_change_1h}} %</p>
+                    </div>
+    
+                    <div class="borde">
+                        <p class="mt-2 text-black-500 font-semibold">Porcentaje Cambio 24h  </p>
+                        <p class="texto3 rojo" *ngIf="crypto.percent_change_24h<0">{{crypto.percent_change_24h}} %</p>
+                        <p class="texto3 verde" *ngIf="crypto.percent_change_24h>0">{{crypto.percent_change_24h}} %</p>
+                    </div>
+                    
+                    
+                </div>
+    
+                <div class="texto">
+                    <div class="borde">
+                        <p class="mt-2 text-black-500 font-semibold">Porcentaje Cambio 7d  </p>
+                        <p class="texto3 rojo" *ngIf="crypto.percent_change_7d<0">{{crypto.percent_change_7d}} %</p>
+                        <p class="texto3 verde" *ngIf="crypto.percent_change_7d>0">{{crypto.percent_change_7d}} %</p>
+                    </div>
+    
+                    <div class="borde">
+                        <p class="mt-2 text-black-500 font-semibold">Porcentaje Cambio 30d  </p>
+                        <p class="texto3 rojo" *ngIf="crypto.percent_change_30d<0">{{crypto.percent_change_30d}} %</p>
+                        <p class="texto3 verde" *ngIf="crypto.percent_change_30d>0">{{crypto.percent_change_30d}} %</p>
+                    </div>
+                    
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    
+</div>

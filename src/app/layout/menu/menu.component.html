@@ -1,0 +1,31 @@
+<div id="main">
+    
+    <img  class="img-fluid" id="image" src="../../../assets/images/1.png" alt="">
+    
+    <nav id="menu">
+        <ul>
+          <li><a routerLink="/noticias" routerLinkActive="activebutton">Noticias</a></li>
+          <li><a routerLink="/criptomonedas" routerLinkActive="activebutton">Criptomonedas</a></li>
+          <li><a href="#">Información</a></li>
+          <li><a routerLink="/administracion" routerLinkActive="activebutton">Administración</a></li>
+          <li><a routerLink="/login">Login</a></li>
+        </ul>
+        
+    </nav>
+    <div class="buscador">
+        <p>Busca tu criptomoneda favorita</p>
+        <div id="linea">
+          <input size="10"  (keyup)="buscarCripto()" [(ngModel)]="nombreCrypto" type="text" name="nombreCrypto" class="inputs" id="nombreCrypto" placeholder="Ej: Bitcoin o BTC">
+          <select [(ngModel)]="this.name" *ngIf="cryptos" name="opcionSeleccionada" id="opcionSeleccionada" class="inputs">
+            <option value="{{crypto.name}}" *ngFor="let crypto of cryptos.data"> {{crypto.name }}</option>
+          </select>
+
+          <button class="boton" (click)="verCriptomoneda(this.name)"> Ver </button>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+<router-outlet></router-outlet>

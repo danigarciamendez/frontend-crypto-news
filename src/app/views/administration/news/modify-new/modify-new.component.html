@@ -1,0 +1,24 @@
+<app-menu></app-menu>
+
+<div class="container contenedor" *ngIf="news">
+    <img src="" alt="">
+    <form [formGroup]="formulario" (ngSubmit)="mostrarDialogo()">
+        <label for="title" class="texto">Título</label>
+        <input type="text" class="textArea" formControlName="title"  [(ngModel)]="_new.title">
+        <br><br>
+        <label for="resume" class="texto"> Resumen</label>
+        <input type="text" class="textArea" formControlName="resume"  [(ngModel)]="_new.resume">
+        <br><br>
+        <label for="description" class="texto">Descripción</label>
+        <textarea class="textAreaDescription" formControlName="description"  [(ngModel)]="_new.description"></textarea>
+        <br><br>
+        <button class="btn btn-warning" type="submit" [disabled]="formulario.invalid">Guardar</button>
+        <button class="btn btn-warning boton" (click)="visibility = true" *ngIf="!visibility">Previsualizar</button>
+        <button class="btn btn-warning boton" (click)="visibility = false" *ngIf="visibility">Ocultar</button>
+    </form>
+</div>
+<br>
+<app-preview-new *ngIf="visibility" [title]="_new.title" 
+                [resume]="_new.resume" [description]="_new.description" [image]="_new.image">
+</app-preview-new>
+<app-footer></app-footer>

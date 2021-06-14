@@ -1,0 +1,14 @@
+<app-menu></app-menu>
+
+<div class="primeraLinea">
+  <app-noticia-principal id="noticiaPrin"></app-noticia-principal>
+  <app-tabla-gan-per id="tablaGanPer"></app-tabla-gan-per>  
+</div>
+
+<div class="primeraLinea margen" *ngIf="noticias">
+  <div class="noticia-peq" *ngFor="let noticia of noticias.data">
+    <app-noticias-peq [titulo] = "noticia.title"></app-noticias-peq>
+  </div> 
+</div>
+
+<app-footer></app-footer>

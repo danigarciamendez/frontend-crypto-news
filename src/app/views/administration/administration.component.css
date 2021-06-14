@@ -1,0 +1,19 @@
+#botones{
+    
+    text-align: center;
+    font-size: 4rem;
+}
+
+#botonNoticia{
+    margin-right: 2%;
+}
+
+#botonUsuario{
+    margin-left: 2%;
+}
+
+.tabla{
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-right: 5%;
+}

@@ -1,0 +1,68 @@
+.contenedor{
+    margin-top: 2%;
+}
+
+#info-cryptos{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 2%;
+
+}
+#info-crypto{
+   
+   background-color: rgb(252, 247, 244);
+   border: 1px solid rgb(245, 219, 200);
+   -moz-border-radius: 9px;
+   -webkit-border-radius:9px;
+   padding: 10px;
+}
+#informacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 11%;
+    width: 80%;
+}
+
+.texto{
+    padding-left: 1%;
+    font-size:19px;
+    font-weight:500;
+    
+}
+
+.texto2{
+    padding-right: 5%;
+    padding-left: 2%;
+    font-size:19px;
+    font-weight:400;
+    
+}
+.texto3{
+    
+    font-size:19px;
+    font-weight:400;
+    
+}
+
+.image{
+    
+    width: 60%;
+    padding: 2%;
+    
+}
+
+.rojo{
+    color: red;
+}
+
+.verde{
+    color: green;
+}
+
+#img-name{
+    text-align: center;
+}
+

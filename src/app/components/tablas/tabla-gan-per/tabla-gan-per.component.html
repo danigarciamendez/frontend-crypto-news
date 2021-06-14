@@ -1,0 +1,26 @@
+<div class="tabla-gan-per">
+    <div id="botones">
+      <button (click)="ganadores()" class="btn boton"><b>Ganadores</b></button>
+      <button (click)="perdedores()" class="btn boton"><b>Perdedores</b></button>
+    </div>
+    <table class="table table-striped table-inverse table-responsive" *ngIf="cryptocurrencies">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Nombre(Simbolo)</th>
+          <th>Precio</th>
+          <th>Cambio 24h</th>
+          <th>Imagen</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr *ngFor="let crypto of cryptocurrencies.data">
+          <td scope="row"> {{ crypto.name}}({{crypto.symbol}})</td>
+          <td>{{ crypto.price}}</td>
+          <td>{{ crypto.percent_change_24h}} % </td>
+          <td> <img class="img-fluid image" src="https://s2.coinmarketcap.com/static/img/coins/64x64/{{crypto.id_coinmarket}}.png" alt=""></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+  </div>

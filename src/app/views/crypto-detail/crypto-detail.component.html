@@ -1,0 +1,23 @@
+<app-menu></app-menu>
+
+<app-info-crypto [(name)]="name"></app-info-crypto>
+<br>
+<br>
+<div class=" primeraLinea">
+  <div class="grafico">
+    <app-grafico [name]="name" [(price)]="price"></app-grafico>
+  </div>
+  <div>
+    <app-chat [nameCrypto]="name" ></app-chat>
+  </div>
+</div>
+
+<br>
+<div class="primeraLinea margen" *ngIf="noticias">
+    <div class="noticia-peq" *ngFor="let noticia of noticias.data">
+      <app-noticias-peq [titulo]="noticia.title" [id]="noticia.id"></app-noticias-peq>
+    </div> 
+</div>
+
+
+<app-footer></app-footer>

@@ -1,0 +1,12 @@
+<app-menu></app-menu>
+<div *ngIf="news" class="container contenedor">
+    <div>
+        <img class="img-fluid" src="../../../assets/images/not1.jpg" alt="">
+
+        <h1>{{news.title}}</h1>
+        <br>
+        <div class="texto" [innerHTML]="news.description"></div>
+        
+    </div>
+</div>
+<app-footer></app-footer>

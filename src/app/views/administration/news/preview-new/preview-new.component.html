@@ -1,0 +1,12 @@
+<div *ngIf="title" class="container contenedor">
+    <div>
+        <img src="../../../assets/images/{{image}}" alt="">
+
+        <h1>{{title}}</h1>
+        <br>
+        <h3>{{resume}}</h3>
+        <br>
+        <div class="texto" [innerHTML]="description"></div>
+        
+    </div>
+</div>

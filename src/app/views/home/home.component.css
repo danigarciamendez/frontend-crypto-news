@@ -1,0 +1,44 @@
+.primeraLinea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px 0px;
+    
+}
+
+#tablaGanPer{
+    width: 35%;
+}
+#noticiaPrin{
+    width: 40%;
+    padding-left: 7%;
+}
+
+.noticia-peq{
+    width: 30%;
+    
+}
+
+.margen{
+    padding-left: 8%;
+    padding-top: 2%;
+}
+
+@media screen and (max-width: 600px) {
+    #noticiaPrin {
+        width:90%;
+        padding-left: 0%;
+    }
+
+    .noticia-peq{
+        width: 70%;
+        
+    }
+    #tablaGanPer{
+        width: 90%;
+    }
+
+    .primeraLinea{
+        gap: 20px 0px;
+    }
+}

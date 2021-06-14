@@ -1,0 +1,17 @@
+<app-menu></app-menu>
+
+<div id="botones">
+    <button  class="btn btn-warning" id="botonNoticia" (click)="seeNews()">Noticias</button>
+
+    <button class="btn btn-warning" id="botonUsuario" (click)="seeUsers()">Usuarios</button>
+</div>
+
+<div *ngIf="this.showNews" class="tabla">
+    <app-tabla-noticias></app-tabla-noticias>
+</div>
+
+<div *ngIf="this.showUsers" class="tabla">
+    <app-tabla-usuarios></app-tabla-usuarios>
+</div>
+
+<app-footer></app-footer>

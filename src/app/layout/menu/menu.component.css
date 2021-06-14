@@ -1,0 +1,127 @@
+#menu{
+    padding-top: 2%;
+    width: 50%;
+    padding-left: 3%;
+}
+
+#image{
+    width: 13%;
+}
+
+#main{
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    
+    width: 100%;
+    
+}
+
+#menu ul li {
+    
+}
+
+
+#menu ul {
+  list-style:none;
+  margin:0;
+  padding: 2%;
+}
+
+#menu ul a {
+  display:inline;
+  color: black;
+  text-decoration:none;
+  font-weight:400;
+  font-size:1.5rem;
+  padding:10px;
+  font-family:"calibri";
+  text-transform:capitalize;
+  letter-spacing:1px;
+}
+
+#menu ul li {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+#menu ul li:hover {
+  background:rgb(218, 216, 216);
+  
+}
+
+#menu ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:0;
+  font-size:22px;
+}
+
+#menu ul ul li {
+  float:none;
+  
+  background-color: rgb(218, 216, 216);
+  
+  
+}
+
+
+
+#menu ul li:hover > ul {
+  display:block;
+  background-color: darkmagenta;
+}
+
+.buscador{
+    padding-top: 2%;
+    font-size: 20px;
+    padding-left: 2%;
+}
+
+.inputs{
+  font-size: 15px;
+  padding: 2%;
+}
+
+#linea{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#lista{
+ margin-left: 3%; 
+}
+
+.boton{
+  border-radius: 20%;
+  padding: 2%;
+  font-size: 15px;
+  background-color: rgb(252, 252, 252);
+}
+
+#opcionSeleccionada{
+  width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  #menu ul a {
+      font-size: 1.2rem;
+  }
+  #menu {
+    padding-left: 0%;
+}
+  .buscador{
+    font-size: 1rem;
+  }
+  #image{
+    width: 50%;
+}
+  
+}

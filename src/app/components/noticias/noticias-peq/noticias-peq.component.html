@@ -1,0 +1,9 @@
+<div (click)="verNoticia(id)">
+    <div class="noticia-min">
+      <div id="image" (mouseover)="textVisible=true" (mouseleave)="textVisible=false">
+        <div id="textSup" *ngIf="textVisible">{{titulo}}</div>
+        <img class="img" id="img" alt="Imagen noticia" src="../../../../assets/images/not1.jpg" />
+        <div id="textInf" *ngIf="textVisible">Categoria | fecha | autor</div>
+      </div>
+    </div>
+  </div>

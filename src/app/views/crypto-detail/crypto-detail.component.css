@@ -1,0 +1,21 @@
+.primeraLinea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px 0px;
+    
+}
+
+.grafico{
+    
+    margin-left: 4rem;
+  padding-left: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .grafico {
+        width:100%;
+    }
+}
+

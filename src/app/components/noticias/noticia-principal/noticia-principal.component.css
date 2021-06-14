@@ -1,0 +1,35 @@
+.noticia {
+    
+    text-align: center;
+  }
+  
+  #image {
+    padding-left: 15%;
+  }
+  #image > #textInf {
+    font-size: 1em;
+    position: relative;
+    bottom: 29px;
+    color: #fff;
+    background-color: #000;
+    padding: 2px 10px;
+    opacity: 0.5;
+    font-weight: bold;
+  }
+  #image > #textSup {
+    font-size: 2em;
+    position: relative;
+    top: 70px;
+    color: #fff;
+    background-color: #000;
+    padding: 2px;
+    opacity: 0.8;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width:980px){
+    .noticia {
+      font-size:60%; 
+    } 
+  }
+

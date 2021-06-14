@@ -1,0 +1,57 @@
+.tabla-gan-per {
+    padding-top: 9%;
+    padding-left: 10%;
+  }
+.boton {
+    margin-left: 2%;
+    border: solid rgb(114, 114, 114);
+  }
+
+.boton:visited {
+    color: brown;
+    background-color: brown;
+  }
+
+.image {
+    width: 44%;
+  }
+
+  @media screen and (max-width: 600px) {
+    table {
+        width:100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight:bold;
+        font-size:1.2em;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+
+    .image {
+      width: 20%;
+    }
+}
+
+.rojo{
+  color: red;
+}
+
+.verde{
+  color: green;
+}
+  
+  
